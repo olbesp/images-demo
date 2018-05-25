@@ -1,0 +1,49 @@
+.SearchIcon {
+  width: 3rem;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.SearchIcon:focus {
+  outline: none;
+}
+
+.SearchIcon:active {
+  transform: scale(.9);
+}
+
+.SearchIcon:active .SearchIcon__icon__top {
+  border: 3px solid #505050;
+} 
+
+.SearchIcon:active .SearchIcon__icon__bottom {
+  background-color: #505050;
+} 
+
+.SearchIcon__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(45deg);
+}
+
+.SearchIcon__icon__top {
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  border: 3px solid #777;
+  transition: all .2s;
+}
+
+.SearchIcon__icon__bottom {
+  width: 5%;
+  height: 20%;
+  border-radius: 30%;
+  background-color: #777;
+  transition: all .2s;
+}

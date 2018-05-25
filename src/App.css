@@ -1,0 +1,38 @@
+.App {
+  transform: translateY(35vh);
+  transition: all 1s;
+}
+
+.App__header {
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #d1d1d1;
+  text-transform: uppercase;
+}
+
+.App__header__main {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.App__header__sub {
+  font-size: 1.25rem;
+  font-weight: inherit;
+  letter-spacing: 1rem;
+}
+
+.App__searchFail {
+  color: #d1d1d1;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.3rem;
+}
+
+.animate {
+  animation: moveOnTop 1s forwards;
+}
+
+@keyframes moveOnTop {
+  from { transform: translateY(35vh); }
+  to { transform: translateY(0); }
+}
